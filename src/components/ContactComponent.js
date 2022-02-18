@@ -76,7 +76,7 @@ class Contact extends Component {
         if(this.state.touched.telnum && !reg.test(telnum)){
             errors.telnum = 'Tel. Number should contain only numbers';
         }
-        else if(this.state.touched.telnum && telnum.length != 10){
+        else if(this.state.touched.telnum && telnum.length !== 10){
             errors.telnum = 'Tel. Number should be 10 digits'
         }
 
